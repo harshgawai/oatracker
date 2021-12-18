@@ -11,7 +11,7 @@ index_app = Dash(__name__,
                      meta_tags=[{'name':'viewport',
                                  'content': 'width=device-width, initial-scale=1.0'}],
                      title="OA Tracker", update_title=None, external_stylesheets=[dbc.themes.BOOTSTRAP], url_base_pathname="/", suppress_callback_exceptions=True)
-
+server = index_app.server
 index_app.layout = html.Div([
     html.Div([
         dbc.Label("Enter an ORCID: ", style={'font-weight': 'bold', 'display':'inline-block'}),
